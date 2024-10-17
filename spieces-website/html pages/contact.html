@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Species Locator</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="search.html">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Popup Message -->
+    <div id="popup" class="popup-message" style="display:none;">
+        <span id="popup-text"></span>
+        <button id="close-popup">X</button>
+    </div>
+
+    <main>
+        <h1>Contact Us</h1>
+        <form id="contact-form" class="contact-form" novalidate>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+            <span class="error-message" id="name-error">Name is required</span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+            <span class="error-message" id="email-error">Valid email is required</span>
+
+            <label for="reason">Reason for Contact:</label>
+            <select id="reason" name="reason" required>
+                <option value="">Select an option</option>
+                <option value="interested">I am interested in your work</option>
+                <option value="join">I want to join</option>
+                <option value="donate">I want to donate</option>
+                <option value="report">I want to report</option>
+            </select>
+            <span class="error-message" id="reason-error">Reason is required</span>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required aria-required="true"></textarea>
+            <span class="error-message" id="message-error">Message cannot be empty</span>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Species Locator. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/ajax.js"></script>
+    <script src="js/contact.js"></script> <!-- Add this line to include the JS file -->
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, rgba(34, 34, 34, 1) 0%, rgba(51, 51, 51, 1) 100%);
+    padding: 20px 40px;
+    width: 100%; /* Full width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px; /* Spacing between letters */
+    color: #4CAF50; /* Logo color */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Flexbox for nav links */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between nav items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s, transform 0.2s; /* Added transform for hover effect */
+    font-weight: 500; /* Slightly bolder for better visibility */
+}
+
+nav ul li a:hover {
+    color: #4CAF50; /* Green on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Main Styles */
+main {
+    padding: 100px 20px; /* Padding for main content */
+    max-width: 800px; /* Maximum width for the main area */
+    margin: 0 auto; /* Center main content */
+    flex-grow: 1; /* Allow main to take remaining space */
+    animation: fadeIn 0.5s; /* Animation for main content */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    margin-bottom: 30px; /* Space below the main heading */
+    font-size: 36px; /* Size of main heading */
+    text-align: center; /* Center the heading */
+    letter-spacing: 1px; /* Spacing for header */
+    color: #4CAF50; /* Green for main heading */
+}
+
+/* Blog Post Styles */
+.blog-post {
+    background-color: #1a1a1a; /* Dark background for posts */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside each post */
+    margin-bottom: 20px; /* Space between posts */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition for hover effect */
+}
+
+.blog-post:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.blog-post h2 {
+    margin-bottom: 10px; /* Space below post title */
+    font-size: 28px; /* Size of blog post title */
+    color: #4CAF50; /* Green color for titles */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.blog-post h2:hover {
+    color: #45a049; /* Darker green on hover */
+}
+
+.blog-post p {
+    margin-bottom: 10px; /* Space below paragraphs */
+    font-size: 16px; /* Size of text */
+    line-height: 1.5; /* Improved line height for readability */
+}
+
+/* Read More Link */
+.blog-post a {
+    text-decoration: none;
+    color: #4CAF50; /* Green for link */
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.blog-post a:hover {
+    color: #45a049; /* Darker green on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px 0; /* Increased padding for better spacing */
+    width: 100%; /* Full width */
+    position: relative;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    main {
+        padding: 80px 10px; /* Adjust padding for mobile */
+    }
+
+    h1 {
+        font-size: 28px; /* Smaller heading on mobile */
+    }
+
+    .blog-post h2 {
+        font-size: 24px; /* Smaller post titles on mobile */
+    }
+
+    .blog-post {
+        padding: 15px; /* Less padding on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center nav items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space between stacked items */
+    }
+}

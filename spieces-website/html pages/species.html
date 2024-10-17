@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Species Search</title>
+
+  <!-- Leaflet CSS and JS for map functionality -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- Chart.js for population chart -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="../css/species.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Species Locator</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <!-- <li><a href="search.html">Search</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Species Search</h1>
+    <p>Find detailed information about various species.</p>
+
+    <!-- Search Bar -->
+    <section id="search-section">
+      <input type="text" id="species-input" placeholder="Search for a species (e.g., Bengal Tiger)" />
+      <button id="search-btn">Search</button>
+      <div id="autocomplete-suggestions"></div> <!-- Autocomplete suggestions -->
+    </section>
+
+    <!-- Species Information -->
+    <section id="species-info">
+      <h2 id="species-name"></h2>
+      <p id="species-description"></p>
+      <div id="species-details"></div>
+    </section>
+
+    <!-- Conservation Status Section -->
+    <section id="conservation-section">
+      <h2>Conservation Status</h2>
+      <p id="conservation-status">Not available</p>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map-section">
+      <h2>Geographic Distribution</h2>
+      <div id="map" style="height: 400px;"></div>
+    </section>
+
+    <!-- Population Data -->
+    <section id="population-section">
+      <h2>Population Data</h2>
+      <canvas id="population-chart"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>Data provided by external APIs.</p>
+  </footer>
+
+  <script src="../js/species.js"></script>
+</body>
+</html>

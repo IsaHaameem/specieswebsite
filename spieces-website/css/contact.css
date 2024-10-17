@@ -1,0 +1,203 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, rgba(34, 34, 34, 1) 0%, rgba(51, 51, 51, 1) 100%); /* Gradient Header */
+    padding: 20px 40px;
+    width: 100%; /* Full width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: fixed; /* Fixed header */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to left */
+    z-index: 10; /* Ensure it's above other content */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px; /* Spacing between letters */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Flexbox for nav links */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between nav items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s, transform 0.2s; /* Added transform for hover effect */
+}
+
+nav ul li a:hover {
+    color: #4CAF50; /* Green on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Main Styles */
+main {
+    padding: 100px 20px; /* Top padding to prevent overlap with fixed header */
+    max-width: 600px; /* Max width for the form */
+    width: 90%; /* Responsive width */
+    background-color: #1a1a1a; /* Dark background for the form */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s; /* Animation on load */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    margin-bottom: 20px; /* Space at the bottom */
+    flex-grow: 1; /* Allow main to take remaining space */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 1px; /* Spacing for header */
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width of the container */
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555; /* Darker border */
+    border-radius: 4px;
+    background-color: #333; /* Input background color */
+    color: #fff; /* Input text color */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition for focus */
+    width: 100%; /* Full width of the input */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Glow effect on focus */
+    outline: none;
+}
+
+.error-message {
+    display: none; /* Hidden by default */
+    color: #ff4d4d; /* Red for error messages */
+    margin-bottom: 10px;
+    font-size: 14px; /* Slightly smaller font */
+}
+
+/* Button Styles */
+button {
+    padding: 10px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+    width: 100%; /* Full width of button */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Popup Message Styles */
+.popup-message {
+    position: fixed; /* Fixed position */
+    top: 20px; /* Distance from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center alignment */
+    background-color: rgba(0, 150, 0, 0.8); /* Semi-transparent green */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 20; /* Ensure it's above other content */
+    transition: opacity 0.3s ease; /* Smooth fade in/out */
+    display: none; /* Hidden by default */
+}
+
+.popup-message button {
+    background: none; /* No background */
+    border: none; /* No border */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    margin-left: 10px; /* Space from the message */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px 0; /* Increased padding for better spacing */
+    position: relative;
+    width: 100%; /* Full width */
+    bottom: 0; /* Align footer to the bottom */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    main {
+        padding: 80px 20px; /* Adjust padding for mobile */
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}

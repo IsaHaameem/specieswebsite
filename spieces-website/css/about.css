@@ -1,0 +1,172 @@
+/* Reset default margin and padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: url('../images/bgimg10.avif'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    padding: 0 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background: rgba(51, 51, 51, 0.5); /* Transparent header */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+/* Change header background on scroll */
+body.scrolled header {
+    background: rgba(51, 51, 51, 0.8); /* Darker on scroll */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align nav items to the right */
+    padding: 0 40px;
+}
+
+nav .logo {
+    font-size: 2rem; /* Larger font for the logo */
+    color: white; /* Ensure the logo is visible */
+    margin-left: 20px; /* Space between logo and the left side */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; /* Slightly increased padding */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px; /* Added border radius for better aesthetics */
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: rgba(0, 123, 255, 0.7); /* Soft blue background on hover */
+}
+
+/* Main content */
+main {
+    margin-top: 100px; /* Space for fixed header */
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    max-width: 1000px;
+    margin: 100px auto 80px; /* Centered content with auto top margin and bottom margin for the footer */
+}
+
+.impact ul {
+    list-style-type: disc;
+    margin-left: 20px; /* Indent list items */
+}
+
+/* Blockquote styles */
+.testimonial {
+    font-style: italic;
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 4px solid #007bff; /* Stylish left border */
+}
+
+/* Call to action button */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Primary color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Footer */
+footer {
+    background: rgba(51, 51, 51, 0.5); /* Transparent footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: flex-end; /* Align items to the right in mobile view */
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin: 10px 0;
+        align-items: center; /* Center items in mobile view */
+    }
+
+    nav .logo {
+        font-size: 1.5rem;
+        display: block; /* Show logo or title in navbar */
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+}

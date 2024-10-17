@@ -1,0 +1,214 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('../images/bgimg2.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Ensures the image covers the entire page */
+    color: #fff; /* White text for better visibility */
+    line-height: 1.6;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0); /* Fully transparent navbar */
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    box-shadow: none; /* No shadow */
+}
+
+.logo {
+    font-size: 1.8rem; /* Increased logo size */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px; /* Adjusted margin for spacing */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+    font-weight: 600; /* Bolder links */
+}
+
+nav ul li a:hover {
+    color: #ffeb3b; /* Highlight color on hover */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Search Bar Styles */
+.search-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 20px; /* Space above the search bar */
+}
+
+#search {
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px; /* Rounded edges for a more elegant look */
+    margin-left: 10px; /* Added margin for better spacing */
+    transition: border-color 0.3s, width 0.3s, background-color 0.3s;
+    width: 220px; /* Default width */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for input */
+    color: #333; /* Dark text for better contrast */
+    font-size: 1rem; /* Increased font size */
+}
+
+#search:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    width: 300px; /* Expanded width on focus */
+    background-color: rgba(255, 255, 255, 1); /* Solid white on focus */
+}
+
+/* Search Button Styles */
+.search-button {
+    padding: 10px 20px; /* Padding for button */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded edges */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+    font-size: 1rem; /* Consistent font size */
+}
+
+.search-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 120px 20px; /* Increased padding for better spacing */
+    color: white;
+    position: relative;
+    overflow: hidden;
+    height: calc(100vh - 100px); /* Adjusted height considering header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Enhanced shadow for readability */
+}
+
+.hero h1 {
+    font-size: 3.5rem; /* Increased heading size */
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem; /* Larger paragraph text */
+    max-width: 700px; /* Increased max width */
+    margin: 0 auto;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0); /* Fully transparent footer */
+    color: white;
+    text-align: center;
+    padding: 30px 20px; /* Increased padding */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: none; /* No shadow */
+}
+
+/* Footer Content Styles */
+.footer-content nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer-content nav ul li {
+    margin: 0 15px;
+}
+
+.footer-content nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content nav ul li a:hover {
+    color: #ffeb3b; /* Highlight color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start; /* Align links to the start */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjusted margin for smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Smaller heading on mobile */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Smaller paragraph text */
+    }
+
+    #search {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 10px; /* Smaller padding on very small screens */
+    }
+
+    .hero h1 {
+        font-size: 1.8rem; /* Smaller heading */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Smaller paragraph text */
+    }
+
+    footer {
+        padding: 15px; /* Smaller padding on footer */
+    }
+}

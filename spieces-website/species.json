@@ -1,0 +1,229 @@
+{
+    "species": [
+      {
+        "id": 1,
+        "name": "Bengal Tiger",
+        "description": "The Bengal tiger is the most numerous tiger subspecies, predominantly found in India.",
+        "conservation_status": "Endangered",
+        "map_coordinates": {
+          "lat": 22.5726,
+          "lng": 88.3639
+        },
+        "habitat": "Sundarbans, Western Ghats, Terai region",
+        "related_species": [
+          {
+            "name": "Indochinese Tiger",
+            "id": 2
+          },
+          {
+            "name": "Siberian Tiger",
+            "id": 3
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Indian Elephant",
+        "description": "The Indian elephant is one of three subspecies of the Asian elephant, primarily found in the forests of India.",
+        "conservation_status": "Endangered",
+        "map_coordinates": {
+          "lat": 11.0168,
+          "lng": 76.9558
+        },
+        "habitat": "Western Ghats, Eastern Himalayas, North-East India",
+        "related_species": [
+          {
+            "name": "Sri Lankan Elephant",
+            "id": 4
+          },
+          {
+            "name": "Borneo Elephant",
+            "id": 5
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Indian Rhino",
+        "description": "The Indian rhinoceros is a large mammal found primarily in the grasslands of Assam and West Bengal.",
+        "conservation_status": "Vulnerable",
+        "map_coordinates": {
+          "lat": 26.2006,
+          "lng": 92.9376
+        },
+        "habitat": "Kaziranga National Park, Manas National Park",
+        "related_species": [
+          {
+            "name": "Javan Rhino",
+            "id": 6
+          },
+          {
+            "name": "Sumatran Rhino",
+            "id": 7
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Snow Leopard",
+        "description": "Snow leopards inhabit the high mountain ranges of the Himalayas and are elusive and hard to spot.",
+        "conservation_status": "Vulnerable",
+        "map_coordinates": {
+          "lat": 32.2208,
+          "lng": 77.0089
+        },
+        "habitat": "Himalayas, Ladakh, Spiti Valley",
+        "related_species": [
+          {
+            "name": "Amur Leopard",
+            "id": 8
+          },
+          {
+            "name": "Persian Leopard",
+            "id": 9
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Indian Leopard",
+        "description": "The Indian leopard is widely distributed across India and is known for its adaptability to various habitats.",
+        "conservation_status": "Vulnerable",
+        "map_coordinates": {
+          "lat": 21.1458,
+          "lng": 79.0882
+        },
+        "habitat": "Western Ghats, Eastern Ghats, Central India",
+        "related_species": [
+          {
+            "name": "African Leopard",
+            "id": 10
+          },
+          {
+            "name": "Arabian Leopard",
+            "id": 11
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Asiatic Lion",
+        "description": "The Asiatic lion is found only in the Gir Forest of Gujarat, India, and is critically endangered.",
+        "conservation_status": "Endangered",
+        "map_coordinates": {
+          "lat": 21.0626,
+          "lng": 70.8022
+        },
+        "habitat": "Gir National Park, Gujarat",
+        "related_species": [
+          {
+            "name": "African Lion",
+            "id": 12
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Indian Bison (Gaur)",
+        "description": "The Indian bison or gaur is the largest bovine species, found in the forests of India.",
+        "conservation_status": "Vulnerable",
+        "map_coordinates": {
+          "lat": 15.3173,
+          "lng": 75.7139
+        },
+        "habitat": "Western Ghats, Central India, Northeastern India",
+        "related_species": [
+          {
+            "name": "Wild Water Buffalo",
+            "id": 13
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Sloth Bear",
+        "description": "The sloth bear is native to the Indian subcontinent and is found in the forests of India.",
+        "conservation_status": "Vulnerable",
+        "map_coordinates": {
+          "lat": 22.9786,
+          "lng": 87.7478
+        },
+        "habitat": "Deciduous forests, Western and Eastern Ghats",
+        "related_species": [
+          {
+            "name": "Asiatic Black Bear",
+            "id": 14
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Indian Wild Dog (Dhole)",
+        "description": "The Indian wild dog, also known as the dhole, is a highly social and endangered species found in the forests of India.",
+        "conservation_status": "Endangered",
+        "map_coordinates": {
+          "lat": 15.9129,
+          "lng": 79.7400
+        },
+        "habitat": "Western Ghats, Central India, North-East India",
+        "related_species": [
+          {
+            "name": "African Wild Dog",
+            "id": 15
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Great Indian Bustard",
+        "description": "The Great Indian Bustard is one of the heaviest flying birds, critically endangered, and found in Rajasthan.",
+        "conservation_status": "Critically Endangered",
+        "map_coordinates": {
+          "lat": 26.9124,
+          "lng": 75.7873
+        },
+        "habitat": "Desert National Park, Rajasthan",
+        "related_species": [
+          {
+            "name": "Lesser Florican",
+            "id": 16
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Nilgiri Tahr",
+        "description": "The Nilgiri tahr is an ungulate found in the high ranges of the Western Ghats.",
+        "conservation_status": "Endangered",
+        "map_coordinates": {
+          "lat": 10.1520,
+          "lng": 76.4051
+        },
+        "habitat": "Western Ghats, Nilgiri Hills",
+        "related_species": [
+          {
+            "name": "Himalayan Tahr",
+            "id": 17
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Indian Pangolin",
+        "description": "The Indian pangolin is a scaly anteater found in forests and grasslands across India.",
+        "conservation_status": "Endangered",
+        "map_coordinates": {
+          "lat": 20.5937,
+          "lng": 78.9629
+        },
+        "habitat": "Western Ghats, Eastern Ghats, Central India",
+        "related_species": [
+          {
+            "name": "Chinese Pangolin",
+            "id": 18
+          }
+        ]
+      }
+    ]
+  }
+  
